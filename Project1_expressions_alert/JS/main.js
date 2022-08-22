@@ -10,3 +10,5 @@ document.write(B)
 var Menu="Burgers", Original="with cheese", Backyard="BBQ", Veggie="lentil patty";
 
 document.write(Backyard);
+
+document.write(5+6);
