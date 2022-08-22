@@ -1,17 +1,17 @@
-window.alert("Hello, World!");
+window.alert("Hello, World!"); //Added initial message
 
-var A="This is a string";
+var A="This is a string"; //Practice string
 
-document.write("Luffy said, \"I\'m going" + " to be King of the Pirates!\"");
+document.write("Luffy said, \"I\'m going" + " to be King of the Pirates!\""); //Practice concatenating strings
 
 var B=" Skinny iced" +" vanilla mocha"
-document.write(B)
+document.write(B) 
 
-var Menu="Burgers", Original="with cheese", Backyard="BBQ", Veggie="lentil patty";
+var Menu="Burgers", Original="with cheese", Backyard="BBQ", Veggie="lentil patty"; //created multiple variables at once
 
-document.write(Backyard);
+document.write(Backyard); //printing specific variable
 
-document.write(5+6);
+document.write(5+6); //writing an expression
 
 function My_First_Function(){ //Defining a function and naming it
   var str="This is the button text!"; //Defining a variable and giving it
