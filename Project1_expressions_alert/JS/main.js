@@ -1,5 +1,5 @@
 window.alert("Hello, World!");
 
-var A="a string";
+var A="This is a string";
 
-document.write(A);
+document.write("Luffy said, \"I\'m going to be King of the Pirates!\"");
