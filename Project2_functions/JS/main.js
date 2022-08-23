@@ -6,6 +6,6 @@ function Function(){
 
 function myFunction(){
   var sentence="I could really use";
-  sentence += " a banana bread";
+  sentence+=" some banana bread."
   document.getElementById("Concatenate").innerHTML=sentence;
 }
