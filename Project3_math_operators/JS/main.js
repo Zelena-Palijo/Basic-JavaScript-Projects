@@ -17,3 +17,8 @@ function division(){
   var division=36/28;
   document.getElementById("Math-4").innerHTML="36 / 28 = "+division; 
 }
+
+function more_Math(){
+  var simple_Math=(3+6)*36/2-8;
+  document.getElementById("Math-5").innerHTML="3 plus 6,multiplied by 36, divided in half, and then subtracted by 8 equals "+simple_Math;
+}
