@@ -4,6 +4,16 @@ function addition_Function(){
 }
 
 function subtraction_Function(){
-  var Subtraction=36-28; //function to be done
-  document.getElementById("Math-2").innerHTML="36-28 ="+Subtraction;
+  var subtraction=36-28; //function to be done
+  document.getElementById("Math-2").innerHTML="36-28 ="+subtraction;
+}
+
+function multiplication(){
+  var multiplication=36*28;
+  document.getElementById("Math-3").innerHTML="36 x 28 = "+multiplication;
+}
+
+function division(){
+  var division=36/28;
+  document.getElementById("Math-4").innerHTML="36 / 28 = "+division;
 }
