@@ -22,3 +22,8 @@ function more_Math(){
   var simple_Math=(3+6)*36/2-8;
   document.getElementById("Math-5").innerHTML="3 plus 6,multiplied by 36, divided in half, and then subtracted by 8 equals "+simple_Math;
 }
+
+function modulus_Operator(){
+  var simple_M=25%6;
+  document.getElementById("Math-6").innerHTML="25 divided by 6 results in a remainder of: "+simple_M;
+}
