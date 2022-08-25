@@ -32,3 +32,13 @@ function negation_Operator(){
   var x=1000;
   document.getElementById("Math-7").innerHTML=-x;
 }
+
+var X=14;
+X++;
+document.write(X);
+
+var Y=14;
+Y--;
+document.write(Y);
+
+window.alert(Math.random());
