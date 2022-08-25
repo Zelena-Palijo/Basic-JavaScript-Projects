@@ -27,3 +27,8 @@ function modulus_Operator(){
   var simple_M=25%6;
   document.getElementById("Math-6").innerHTML="25 divided by 6 results in a remainder of: "+simple_M;
 }
+
+function negation_Operator(){
+  var x=1000;
+  document.getElementById("math-7").innerHTML=-x;
+}
