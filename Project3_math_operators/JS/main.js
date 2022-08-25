@@ -30,5 +30,5 @@ function modulus_Operator(){
 
 function negation_Operator(){
   var x=1000;
-  document.getElementById("math-7").innerHTML=-x;
+  document.getElementById("Math-7").innerHTML=-x;
 }
