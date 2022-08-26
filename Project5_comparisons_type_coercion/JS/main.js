@@ -48,3 +48,15 @@ document.write(A===B); //false, diff data type, same value
 F=78
 G=79
 document.write(F===G); //false, same data type, diff value
+
+//BOOLEAN LOGICAL OPERATORS
+//AND
+document.write(36>28 && 36>20); // T T =T
+
+document.write(28>36 && 36>20); // F T =F
+
+//OR
+document.write(28>36||36>20); //F T =T
+
+document.write(28>36||20>36); //F F =F
+
