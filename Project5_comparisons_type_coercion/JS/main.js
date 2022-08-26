@@ -8,6 +8,10 @@ function my_Function(){
   document.getElementById("Test").innerHTML=0/0; //result NaN
 }
 
+function NAN(){
 document.getElementById("Test-1").innerHTML=isNaN('What am I'); //true since not a number
+}
 
-document.getElementById("Test-2").innerHTML=isNaN('987');
+function NAN2(){
+document.getElementById("Test-2").innerHTML=isNaN('987'); //falst since a number
+}
