@@ -32,10 +32,19 @@ document.write(36==36); //equal, true
 
 document.write(36==28); //not equal, false
 
+//triple equal sign challenge
 X=36
 Y=36
-document.write(X===Y); //equal, and both same type (number)
+document.write(X===Y); //true, same data type and number
+
+C=36
+D="28"
+document.write(C===D); //false, diff data type, diff value
 
 A=36
 B="36"
-document.write(A===B); //false, B is string
+document.write(A===B); //false, diff data type, same value
+
+F=78
+G=79
+document.write(F===G); //false, same data type, diff value
