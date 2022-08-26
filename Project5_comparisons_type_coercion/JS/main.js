@@ -23,3 +23,5 @@ document.write(-6E900); //result -infinity
 document.write(19>1); //Boolean, true
 
 document.write(19<1); //false
+
+console.log(3+4);
