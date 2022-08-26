@@ -65,7 +65,7 @@ function not_Function(){
   document.getElementById("Not").innerHTML=!(40>10);
 } // NOT (TRUE) >>FALSE
 
-function not_Function(){
+function not_function(){
   document.getElementById("Not-1").innerHTML=!(40<10);
 } // NOT (FALSE) >>TRUE
 
