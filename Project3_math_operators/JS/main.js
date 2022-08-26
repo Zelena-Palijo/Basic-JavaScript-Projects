@@ -43,4 +43,4 @@ document.write(Y); //decrement
 
 window.alert(Math.random()); //generates random number
 
-Math.round(7.8); //math object method should round to 8
+document.write(Math.round(7.8)); //math object method should round to 8
