@@ -60,3 +60,12 @@ document.write(28>36||36>20); //F T =T
 
 document.write(28>36||20>36); //F F =F
 
+//NOT OPERATOR
+function not_Function(){
+  document.getElementById("Not").innerHTML=!(40>10);
+} // NOT (TRUE) >>FALSE
+
+function not_Function(){
+  document.getElementById("Not-1").innerHTML=!(40<10);
+} // NOT (FALSE) >>TRUE
+
