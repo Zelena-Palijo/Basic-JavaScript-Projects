@@ -19,3 +19,7 @@ document.getElementById("Test-2").innerHTML=isNaN('987'); //falst since a number
 document.write(6E900); //result infinity
 
 document.write(-6E900); //result -infinity
+
+document.write(19>1); //Boolean, true
+
+document.write(19<1); //false
