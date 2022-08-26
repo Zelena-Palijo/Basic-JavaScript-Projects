@@ -15,3 +15,7 @@ document.getElementById("Test-1").innerHTML=isNaN('What am I'); //true since not
 function NAN2(){
 document.getElementById("Test-2").innerHTML=isNaN('987'); //falst since a number
 }
+
+document.write(6E900); //result infinity
+
+document.write(-6E900); //result -infinity
