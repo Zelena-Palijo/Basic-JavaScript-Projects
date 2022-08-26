@@ -24,6 +24,18 @@ document.write(19>1); //Boolean, true
 
 document.write(19<1); //false
 
-console.log(3+4);
+console.log(3+4); //check console for 7
 
-console.log(17<3);
+console.log(17<3); //check console for false
+
+document.write(36==36); //equal, true
+
+document.write(36==28); //not equal, false
+
+X=36
+Y=36
+document.write(X===Y); //equal, and both same type (number)
+
+A=36
+B="36"
+document.write(A===B); //false, B is string
