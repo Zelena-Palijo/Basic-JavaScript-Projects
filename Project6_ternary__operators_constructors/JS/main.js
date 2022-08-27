@@ -5,9 +5,23 @@ function Ride_Function(){
   document.getElementById("Ride").innerHTML=Can_ride+" to ride.";
 }
 
-function Vote_Function(){
+function Vote_Function(){ //vote ternary objects challenge
   var Age, Can_vote;
   Age=document.getElementById("Age").ariaValueMax;
-  Can_vote=(Age<18)?"You are too young":"You are old enough";
+  Can_vote=(Age<18)?"You are too young":"You are old enough"; //set age to 18
   document.getElementById("Vote").innerHTML=Can_vote+" to vote.";
+}
+
+//Constructors challege c/p
+function Vehicle(Make, Model,Year,Color){
+  this.Vehicle_Make=Make;
+  this.Vehicle_Model=Model;
+  this.Vehicle_Year=Year;
+  this.Vehicle_Color=Color;
+}
+var Jack=new Vehicle("Dodge","Viper", 2020, "Red");
+var Emily=new Vehicle("Jeep","Trail Hawk",2019,"White and Black");
+var Erik=new Vehicle("Ford","Pinto",1971,"Mustard");
+function myFunction(){
+  document.getElementById("Keywords_and_Constructors").innerhTML="Erik drives a "+Erik.Vehicle_Color+"-colored"+Erik.Vehicle_Model+" manufactured in "+Erik.Vehicle_Year;
 }
