@@ -37,3 +37,16 @@ function Reserved(){
   };
   document.getElementById("Reserved").innerHTML=Illegal.Status;
 }
+
+//136 object constructor function challege
+function Person(first, last, age, eyecolor){
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyecolor;
+}
+var Mark=new Person("Jack","Smith", 20,"Green");
+var Jerry=new Person("Emily","Mac",19,"Black");
+function Who_dis(){
+  document.getElementById("People").innerHTML="Jerry is actually "+Jerry.firstName + Jerry.lastName + " who is a "+ Jerry.age + " year old "+ Jerry.eyeColor + "-eyed person.";
+}
