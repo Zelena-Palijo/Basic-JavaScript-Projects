@@ -29,3 +29,11 @@ function myFunction(){
 function my_Function(){
   document.getElementById("New_and_This").innerHTML="Emily drives a "+Emily.Vehicle_Color+"-colored "+Emily.Vehicle_Model+" manufactured in "+Emily.Vehicle_Year;
 }
+
+//Reserved keyword challenge
+function Reserved(){ 
+  var Delete={ //not going to work bc reserved word
+    Status:"possible",
+  };
+  document.getElementById("Reserved").innerHTML=Illegal.Status;
+}
