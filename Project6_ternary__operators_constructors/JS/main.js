@@ -50,3 +50,14 @@ var Jerry=new Person("Emily","Mac",19,"Black");
 function Who_dis(){
   document.getElementById("People").innerHTML="Jerry is actually "+Jerry.firstName + Jerry.lastName + " who is a "+ Jerry.age + " year old "+ Jerry.eyeColor + "-eyed person.";
 }
+
+//nested function
+function count_Function(){
+  document.getElementById("Nested_Function").innerHTML=Count();
+  function Count(){
+    var Starting_point=29;
+    function Plus_one(){Starting_point+=7;}
+    Plus_one();
+    return Starting_point;
+  }
+}
