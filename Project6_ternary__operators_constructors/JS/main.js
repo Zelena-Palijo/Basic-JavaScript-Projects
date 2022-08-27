@@ -25,3 +25,7 @@ var Erik=new Vehicle("Ford","Pinto",1971,"Mustard");
 function myFunction(){
   document.getElementById("Keywords_and_Constructors").innerHTML="Erik drives a "+Erik.Vehicle_Color+"-colored "+Erik.Vehicle_Model+" manufactured in "+Erik.Vehicle_Year;
 }
+//New keyword challenge
+function my_Function(){
+  document.getElementById("New_and_This").innerHTML="Emily drives a "+Emily.Vehicle_Color+"-colored "+Emily.Vehicle_Model+" manufactured in "+Emily.Vehicle_Year;
+}
