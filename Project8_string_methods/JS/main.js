@@ -15,3 +15,9 @@ function slice_Method(){
   document.getElementById("Slice").innerHTML=Section;
 }
 
+//upper case method
+function Upper_case(){
+let text = "Hello World!";
+let result = text.toUpperCase();
+document.getElementById("demo").innerHTML=result;
+}
