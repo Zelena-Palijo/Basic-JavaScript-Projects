@@ -47,3 +47,15 @@ function What(){
   document.getElementById("Whatif").innerHTML="The number is smaller, but that's about it.";
   }
 }
+
+//else statements
+function Age_Function(){
+  Age=document.getElementById("Age").value;
+  if(Age>=21){
+    Drink="You are old enough to drink in the US.";
+  }
+  else{
+    Drink="You are not old enough to drink in the US. :(";
+  }
+  document.getElementById("How_old_are_you?").innerHTML=Drink;
+}
