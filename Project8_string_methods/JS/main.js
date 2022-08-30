@@ -21,3 +21,10 @@ let text = "Hello World!";
 let result = text.toUpperCase();
 document.getElementById("demo").innerHTML=result;
 }
+
+//search method
+function Searching(){
+let text="Will you be around"
+let position=text.search("around");
+document.getElementById("demo-1").innerHTML=position;
+}
