@@ -47,3 +47,10 @@ function fixed_method(){
   let n=num.toFixed(2);
   document.getElementById("demo-3").innerHTML=n;
 }
+
+//value of
+function value_method(){
+  let text="Cha cha cha Charmin";
+  let result=text;
+  document.getElementById("demo-4").innerHTML=result;
+}
