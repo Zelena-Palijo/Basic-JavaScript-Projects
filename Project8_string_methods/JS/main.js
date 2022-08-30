@@ -40,3 +40,10 @@ function precision_Method(){
   var Y=12747384793.748384093843
   document.getElementById("Precision").innerHTML=Y.toPrecision(10);
 }
+
+//to fixed method
+function fixed_method(){
+  let num=77.988798;
+  let n=num.toFixed(2);
+  document.getElementById("demo-3").innerHTML=n;
+}
