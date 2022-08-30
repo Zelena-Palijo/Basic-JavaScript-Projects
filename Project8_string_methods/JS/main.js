@@ -28,3 +28,9 @@ let text="Will you be around"
 let position=text.search("around");
 document.getElementById("demo-1").innerHTML=position;
 }
+
+//turn it to a string
+function string_Method(){
+  var X=990;
+  document.getElementById("Numbers_to_string").innerHTML=X.toString();
+}
