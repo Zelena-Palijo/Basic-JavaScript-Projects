@@ -34,3 +34,9 @@ function string_Method(){
   var X=990;
   document.getElementById("Numbers_to_string").innerHTML=X.toString();
 }
+
+//to precision
+function precision_Method(){
+  var Y=12747384793.748384093843
+  document.getElementById("Precision").innerHTML=Y.toPrecision(10);
+}
