@@ -7,6 +7,13 @@
   margin: auto;
 }
 
+/* Image for object fit*/
+.img {
+  width:400px;
+  height:500px;
+  object-fit:contain;
+}
+
 /* Hide the images by default */
 .mySlides {
   display: none;
