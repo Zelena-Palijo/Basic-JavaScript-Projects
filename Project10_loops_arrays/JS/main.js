@@ -1,4 +1,4 @@
-function Call_Loop(){
+function Call_Loop(){ //countdown
   var Digit="";
   var X=10;
   while(X>1){
@@ -6,4 +6,9 @@ function Call_Loop(){
     X--;
   }
   document.getElementById("Loop").innerHTML=Digit;
-}
+} //seems to pop up all at once, defer not working?
+
+//find string length
+let text="Heya heya";
+let length=text.length;
+document.getElementById("demo").innerHTML=length;
