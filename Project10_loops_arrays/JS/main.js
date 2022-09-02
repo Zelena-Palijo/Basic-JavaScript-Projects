@@ -23,3 +23,12 @@ function for_Loop(){
   }
   document.getElementById("List_of_Instruments").innerHTML=Content;
 }
+
+//array function 
+function array_Function(){
+  var water=[];
+  water[0]="solid";
+  water[1]="liquid";
+  water[2]="gas";
+  document.getElementById("Array").innerHTML="At 5 degress Celcius, water is a " +water[1]+".";
+}
