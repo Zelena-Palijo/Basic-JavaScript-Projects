@@ -51,13 +51,25 @@ A=9
 document.write(A);
 
 //let 
-function let(){
+function let_function(){
   let C=3
   document.getElementById("let").innerHTML=C;
 }
 
-//return function example ***
+//return function example ***not working?
 function return_function(name){
-  return "Hello" +name;
-  document.getElementById("e").innerHTML=return_function("Zelena");
-}
+  return "Hello " + name;
+};
+document.getElementById("e").innerHTML=return_function("Zelena");
+
+//object let function
+let computer={
+  make:"Apple",
+  model:"Air",
+  year:"2020",
+  color:"grey",
+  description: function(){
+    return "The computer is a "+ thiss.year + this.color + this.make + this.model;
+    }
+};
+document.getElementById("macbook").innerHTML=computer.description();
