@@ -32,3 +32,20 @@ function array_Function(){
   water[2]="gas";
   document.getElementById("Array").innerHTML="At 5 degress Celcius, water is a " +water[1]+".";
 }
+
+//constant function
+function constant_function(){
+  const Macaroni={brand:"Kraft",color:"orange",package:"box"};
+  Macaroni.package="cup";
+  Macaroni.color="yellow";
+  document.getElementById("Constant").innerHTML="I picked up some "+Macaroni.package+" "+Macaroni.brand+" mac n cheese at the store";
+}
+
+//error constant vs working var
+const Z=2
+Z=3
+document.write(Z);
+
+var A=10
+A=9
+document.write(A);
