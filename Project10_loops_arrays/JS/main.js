@@ -49,3 +49,9 @@ document.write(Z);
 var A=10
 A=9
 document.write(A);
+
+//let 
+function let(){
+  let C=3
+  document.getElementById("let").innerHTML=C;
+}
