@@ -63,6 +63,7 @@ function return_function(name){
 document.getElementById("e").innerHTML=return_function("Zelena");
 
 //object let function
+function computer(){
 let computer={
   make:"Apple",
   model:"Air",
@@ -73,7 +74,7 @@ let computer={
     }
 };
 document.getElementById("macbook").innerHTML=computer.description();
-
+}
 
 //break statement challenge
 function let1_function(){
