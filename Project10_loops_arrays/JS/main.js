@@ -69,7 +69,16 @@ let computer={
   year:"2020",
   color:"grey",
   description: function(){
-    return "The computer is a "+ thiss.year + this.color + this.make + this.model;
+    return "The computer is a " + this.year + this.color + this.make + this.model;
     }
 };
 document.getElementById("macbook").innerHTML=computer.description();
+
+
+//break statement challenge
+let word="";
+for (let i=0;i<10;i++){
+  if (i===3) { break; }
+  word += "The number is " +i +"<br>";
+}
+document.getElementById("demo-2").innerHTML=word;
