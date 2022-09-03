@@ -55,3 +55,9 @@ function let(){
   let C=3
   document.getElementById("let").innerHTML=C;
 }
+
+//return function example ***
+function return_function(name){
+  return "Hello" +name;
+  document.getElementById("e").innerHTML=return_function("Zelena");
+}
