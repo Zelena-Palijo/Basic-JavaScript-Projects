@@ -57,10 +57,12 @@ function let_function(){
 }
 
 //return function example ***not working?
+function return1(){
 function return_function(name){
-  return "Hello " + name;
+  return name;
 };
-document.getElementById("e").innerHTML=return_function("Zelena");
+document.getElementById("ello").innerHTML=return_function("Zelena");
+}
 
 //object let function
 function computer(){
