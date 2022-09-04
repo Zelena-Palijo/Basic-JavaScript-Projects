@@ -25,3 +25,9 @@ function Color_Function(){ //named colour but choosing soda flavors
   }
   document.getElementById("Output").innerHTML=Color_Output;
 }
+
+//trying get elements by class name function
+function Hello_World_Function(){
+  var A=document.getElementsByClassName("Touch");
+  A[1].innerHTML="This text has changed!"
+}
