@@ -103,7 +103,7 @@ function checkWinConditions(){
   //This condition checks for a tie. if none of the above conditions are met and 9 squares are selected the code executes
   else if(selectedSquares.length>=9){
     //this function plays the tie game sound
-    audio('.media/tie/.mp3');
+    audio('./media/tie/.mp3');
     //this function sets a .3 second timer before the reset game is called.
     setTimeout(function(){ resetGame();},500);
   }
@@ -117,6 +117,22 @@ function checkWinConditions(){
     //if the 3 variables we pass are all included in our array then true is returned and our else if condition executes the drawline() function.
     if(a===true && b===true && c===true){return true;}
   }
+}
+
+//makes body element temporarily unclickable
+function disableClick(){
+  //this makes body unclickable
+  body.style.pointerEvents='none';
+  //makes body clickable again after 1 second
+  setTimeout(function(){body.style.pointerEvents='auto';},1000);
+}
+
+//takes a string parametere of the path yu set earlier for placement sound
+function audio(audioURL){
+  //created a new audio object and pass the path as a parameter
+  let audio=new Audio(audioURL);
+  //play method plays our audio sound.
+  audio.play();
 }
 
 
