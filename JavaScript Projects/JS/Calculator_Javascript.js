@@ -21,7 +21,7 @@ function Input_Digit(digit){
   } else{
     //this overwrites Display_Value if the current value is o
     //otherwise it adds onto it
-    Calculator.Display_Value=Display_Value==='0'?digit:Display_Value+digit;
+    Calculator.Display_Value = Display_Value ==='0' ? digit : Display_Value+ digit;
   }
 }
 
@@ -29,11 +29,11 @@ function Input_Digit(digit){
 function Input_Decimal(dot){
   //this ensures that accidental clicking of the decimal point does
   //cause bugs in the operation
-  if (Calculator.Wait_Second_Operand===true)return;
+  if (Calculator.Wait_Second_Operand === true) return;
   if (!Calculator.Display_Value.includes(dot)){
     //we are saying that if the display_value does not contain a decimal point
     //w want to add a decimal point
-    Calculator.Display_Value+=dot;
+    Calculator.Display_Value += dot;
   }
 }
 
@@ -46,14 +46,14 @@ function Handle_Operator(Next_Operator){
   const Value_of_Input=parseFloat(Display_Value);
   //checks if an operator already exists and if Wait_SEcond_Operand is true,
   //then updates the operator an exits frm the function
-  if(operator&&Calculator.Wait_Second_Operand){
+  if(operator && Calculator.Wait_Second_Operand){
     Calculator.operator=Next_Operator;
     return;
   }
   if (First_Operand==null){
     Calculator.First_Operand=Value_of_Input;
-  } else if(operator){//checks if an operator already exists
-    const Value_Now=First_Operand ||0;
+  } else if(operator) {//checks if an operator already exists
+    const Value_Now = First_Operand||0;
     //if operator exists, property lookup is performed for the operator
     //in the perform_calcuation object and the function that matches th
     //operator is executed
@@ -85,7 +85,7 @@ function Calculator_Reset(){
 function Update_Display(){
   //makes use of the calculator-screen class to target the 
   //input tag in the HTML document
-  const display=document.querySelector('.calculator.screen');
+  const display=document.querySelector('.calculator-screen');
   display.value=Calculator.Display_Value;
 }
 
@@ -95,7 +95,7 @@ const keys=document.querySelector('.calculator-keys');
 keys.addEventListener('click',(event)=>{
   //the target variable is an object that represents the element
   //that was clicked
-  const {target} =event;
+  const {target} = event;
   //if the element that was clicked on is not a button, exit the function
   if(!target.matches('button')){
     return;
@@ -105,7 +105,7 @@ keys.addEventListener('click',(event)=>{
     Update_Display();
     return
   }
-  if(target.classLlist.contains('decimal')){
+  if(target.classList.contains('decimal')){
     Input_Decimal(target.value);
     Update_Display();
     return;
