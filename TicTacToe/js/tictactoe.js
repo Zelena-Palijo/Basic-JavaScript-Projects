@@ -208,4 +208,17 @@ function drawWinLine(coordX1, coordY1,coordX2,coordY2){
     setTimeout(function(){clear();resetGame();},1000);
 }
 
+//this function resets the game in the even of a tie or win
+function resetGame(){
+  //this for loop iterates through each HTML square elemnt
+  for (let i=0;i<9;i++){
+    //this variable gets the hTML element i
+    let square=document.getElementById(String(i));
+    //this removes our elements backgroundimage
+    square.style.backgroundImage='';
+  }
+  //this rsets our array so it is empty and we can start over.
+  selectedSquares=[];
+}
+
 
