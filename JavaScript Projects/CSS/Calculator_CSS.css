@@ -3,7 +3,7 @@ html{
   box-sizing:border-box;
 }
 
-*,*::before,*::after{
+*, *::before, *::after{
   margin:0;
   padding:0;
   box-sizing:inherit;
@@ -76,7 +76,7 @@ button:hover{
   background-color:darkblue;
 }
 
-calculator-keys{
+.calculator-keys{
   display:grid;
   grid-template-columns:repeat(4,1fr);
   grid-gap:20px;
