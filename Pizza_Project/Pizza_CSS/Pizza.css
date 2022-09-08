@@ -28,7 +28,11 @@
   float:right;
 }
 
-
+.center{
+  width:200px;
+  height:200px;
+  float:center;
+}
 
 #showText{
   width:200px;
