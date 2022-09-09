@@ -9,7 +9,7 @@ function my_Dictionary(){ //created dictionary KVP
   document.getElementById("Dictionary").innerHTML=Hero.Class;
 }
 
-function my_Dictionary(){
+function my_Dictionary_1(){
   var Hero={
     Species:"Cyborg",
     Color:"Steel",
@@ -17,6 +17,6 @@ function my_Dictionary(){
     Age:19,
     Catchphrase:"Master!"
   };
-  delete Hero.Age; //delete assignment prompt
+  //delete Hero.Age; //delete assignment prompt
   document.getElementById("Dictionary-1").innerHTML=Hero.Age; //should produce undefined
 }
