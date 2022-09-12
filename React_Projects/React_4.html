@@ -3,8 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>React_4</title>
+    
   </head>
   <body>
+    <script>
+      document.body.classList.add('fade-out');
+  
+      window.addEventListener('DOMContentLoaded',()=>{ //this removes the fadeout once the page is loaded
+        document.body.classList.remove('fade-out');
+      })
+     </script>
 
     <p style="font-size:2vw;">This is testing the resize using vw</p>
 
@@ -26,12 +34,6 @@
       }
     </style>
 
-   <script>
-    document.body.classList.add('fade-out');
 
-    window.addEventListener('DOMContentLoaded',()=>{ //this removes the fadeout once the page is loaded
-      document.body.classList.remove('fade-out');
-    })
-   </script>
   </body>
 </html>
