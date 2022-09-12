@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <p id="XML_Exmaple"></p>
+    <p id="XML_Food"></p> <!--XML_EXAMPLE TO FOOD-->
     <script>
       var XML_Parser,XML_Document;
 
       //creates a text string
-      var Movie="<movie>" +
-      "<title>Schindler\'s List</title>" +
-      "<director>Steven Spielberg</director>" +
-      "<starring>Liam Neeson</starring>" +
+      var FoodTV="<show>" +
+      "<title>Diners, Drive-ins, and Dives</title>" +
+      "<starring>Guy Fieri</starring>" +
       "<year>1993</year>" +
-      "</movie>";
+      "</show>";
+      //updated from movie > foodtv show, triple D
 
       //creates an XML DOM parser
       XML_Parser=new DOMParser();
@@ -19,7 +19,7 @@
       //creates a new XML DOM object using the text string
       XML_Document=XML_Parser.parseFromString(Movie,"text/xml");
 
-      document.getElementById("XML_Example").innerHTML= XML_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+      document.getElementById("XML_Food").innerHTML= XML_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue;
     </script>
   </body>
 </html>
