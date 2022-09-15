@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>JSON stringify assignment</title>
+    <title>Local storage method assignment</title>
   </head>
   <body>
     <p id="myHero"></p>
 
     <script>
-      /* This is a JSON string variable */
-      var hero='{"name":"Saitama","species":"human","hair":"none"}';
-      /*convert JSON strings to JavaScript objects */
-      var JSONstring=JSON.parse(hero);
-      document.getElementById("myHero").innerHTML=JSONstring.name+" the "+JSONstring.species;
+      /* set the data as a key/value pair to be saved locally in the browser */
+      localStorage.setItem("Name", "Saitama");
+      /* then use the key "Name" to return its value "Saitama" */
+      document.getElementById("myHero").innerHTML=localStorage.getItem("Name");
     </script>
   </body>
 </html>
