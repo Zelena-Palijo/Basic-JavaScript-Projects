@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JSON stringify assignment</title>
+  </head>
+  <body>
+    <p id="myHero"></p>
+
+    <script>
+      /* Javascript dictionary object */
+      var hero={name:"Saitama",species:"human",hair:"none"};
+      /*convert JavaScript objects to string format */
+      var JSONstring=JSON.stringify(hero);
+      document.getElementById("myHero").innerHTML=JSONstring;
+    </script>
+  </body>
+</html>
